@@ -3,7 +3,6 @@ import os
 import config
 import tensorflow as tf
 from siamese import siamese
-from tensorflow.python.keras.utils.multi_gpu_utils import multi_gpu_model
 from tensorflow.keras.optimizers import SGD
 from tensorflow.keras.callbacks import *
 import cv2
