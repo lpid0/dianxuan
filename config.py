@@ -9,11 +9,11 @@ weight_model_path = './vgg16_weights_tf_dim_ordering_tf_kernels_notop.h5'
 input_shape = (52,52,3)
 
 # 如果不使用GPU训练，则传入列表，多个GPU则传入多个编号
-gpu = []
+gpu = [0]
 # gpu = [0,1,2,3]
 
 # 训练ecoph数
-epochs = 3000
+epochs = 1000
 # 批次大小
 batch_size = 128
 
@@ -29,7 +29,7 @@ tensorboard_log_dir = './logs'
 # 验证集比例
 valid_rate = 0.05
 
-sample_path = './sample'
+sample_path = '/kaggle/input/2737131313'
 
 auto_best_checkpoint_path = './checkpoint/best.h5'
 
